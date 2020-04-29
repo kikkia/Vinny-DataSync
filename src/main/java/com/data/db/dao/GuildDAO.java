@@ -26,9 +26,6 @@ public class GuildDAO {
     private HikariDataSource write;
 
     @Autowired
-    private AliasDAO aliasDAO;
-
-    @Autowired
     private MembershipDAO membershipDAO;
 
     @Autowired

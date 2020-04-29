@@ -18,9 +18,6 @@ public class ChannelDAO {
     @Autowired
     private HikariDataSource write;
 
-    @Autowired
-    private AliasDAO aliasDAO;
-
     public void addVoiceChannel(VoiceChannel voiceChannel) {
         String query = "INSERT INTO voice_channel(id, guild, name) VALUES (?,?,?) ON DUPLICATE KEY UPDATE name=VALUES(name)";
         try (Connection connection = write.getConnection()){

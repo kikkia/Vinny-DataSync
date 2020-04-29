@@ -1,7 +1,4 @@
-package com.bot.models
-
-import com.data.db.models.Alias
-import com.data.db.models.InternalChannel
+package com.data.db.models
 
 
 class InternalTextChannel(id: String,
@@ -28,7 +25,7 @@ class InternalTextChannel(id: String,
                 isNSFWEnabled == that.isNSFWEnabled &&
                 isCommandsEnabled == that.isCommandsEnabled &&
                 isVoiceEnabled == that.isVoiceEnabled &&
-                id == that.getId() &&
+                id == that.id &&
                 guildId == that.guildId &&
                 name == that.name
     }

@@ -1,4 +1,4 @@
-package com.bot.models
+package com.data.db.models
 
 // WIP
-public data class InternalUser(val id: String)
+data class InternalUser(val id: String)
